@@ -1,0 +1,25 @@
+{
+    "name": "pipes-language-support",
+    "displayName": "PIPES Language Support",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "pipes",
+            "aliases": ["PIPES", "pipes"],
+            "extensions": [".pi"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pipes",
+            "scopeName": "source.pipes",
+            "path": "./syntaxes/pipes.tmLanguage.json"
+        }]
+    }
+}

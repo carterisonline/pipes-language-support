@@ -1,0 +1,93 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "PIPES",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#string"
+		},
+		{
+			"include": "#storage"
+		},
+		{
+			"include": "#variable"
+		},
+		{
+			"include": "#constant"
+		},
+		{
+			"include": "#punctuation"
+		}
+	],
+	"repository": {
+		"punctuation": {
+			"patterns": [
+				{
+					"name": "punctuation.terminator.pipes",
+					"match": "\\|>"
+				}
+			]
+		},
+		"string": {
+			"patterns": [
+				{
+					"name": "string.other",
+					"match": "#(?:\\w \\w++)?+[^ ]"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+				"name": "keyword.control.pipes",
+				"match": "\\b(ROUTINE|END|GOTO|EQUAL|NOTEQUAL|EXIT|LESSTHAN|GREATERTHAN|LESSTHANEQ|GREATERTHANEQ|LABEL)\\b"
+				},
+				{
+				"name": "keyword.other.pipes",
+				"match": "(?<=> )\\w++|(?<=\\()\\w++"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+				"name": "comment.line.pipes",
+				"begin": "#c",
+				"end": "\n"
+
+				}
+			]
+		},
+		"storage":{
+			"patterns": [
+				{
+				"name": "storage.other.pipes",
+				"match": "(&|\\$|@)"
+				}
+				
+			]
+		},
+		"variable": {
+			"patterns": [
+				{
+					"name": "variable.parameter.pipes",
+					"match": "(?<=\\$)\\w++"
+				}
+			]
+		},
+		"constant": {
+			"patterns": [
+				{
+					"name": "constant.numeric.pipes",
+					"match": "\\-?+[\\d\\.]++"
+				}
+			]
+		}
+	},
+	"scopeName": "source.pipes"
+}
