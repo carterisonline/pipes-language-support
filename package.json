@@ -2,7 +2,7 @@
     "name": "pipes-language-support",
     "displayName": "PIPES Language Support",
     "description": "",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.52.0"
     },
@@ -20,6 +20,15 @@
             "language": "pipes",
             "scopeName": "source.pipes",
             "path": "./syntaxes/pipes.tmLanguage.json"
-        }]
+        }],
+        "iconThemes": [
+            {
+                "id": "general-extender",
+                "path": "./general-extender-icon-theme.json",
+                "extends": {
+                    "all": true
+                }
+            }
+        ]
     }
 }

@@ -1,0 +1,10 @@
+{
+    "iconDefinitions": {
+        "_f_pipes": {
+            "iconPath": "./icons/pipes-logo.png"
+        }
+    },
+    "fileExtensions": {
+        "pi": "_f_pipes"
+    }
+}
