@@ -20,15 +20,6 @@
             "language": "pipes",
             "scopeName": "source.pipes",
             "path": "./syntaxes/pipes.tmLanguage.json"
-        }],
-        "iconThemes": [
-            {
-                "id": "general-extender",
-                "path": "./general-extender-icon-theme.json",
-                "extends": {
-                    "all": true
-                }
-            }
-        ]
+        }]
     }
 }
