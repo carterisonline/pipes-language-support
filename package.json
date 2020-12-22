@@ -7,9 +7,9 @@
         "type": "git",
         "url": "https://github.com/carterisonline/pipes-language-support.git"
     },
-    "version": "0.1.0",
+    "version": "0.1.2",
     "engines": {
-        "vscode": "^1.52.0"
+        "vscode": "^1.37.0"
     },
     "categories": [
         "Programming Languages"
