@@ -2,7 +2,11 @@
     "name": "pipes-language-support",
     "displayName": "PIPES Language Support",
     "description": "",
-    "publisher": "Carter Reeb <carter2k4@pm.me>",
+    "publisher": "carterisonline",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/carterisonline/pipes-language-support.git"
+    },
     "version": "0.1.0",
     "engines": {
         "vscode": "^1.52.0"
