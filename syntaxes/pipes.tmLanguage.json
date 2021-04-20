@@ -45,7 +45,7 @@
 			"patterns": [
 				{
 				"name": "keyword.control.pipes",
-				"match": "\\b(ROUTINE|END|GOTO|EQUAL|NOTEQUAL|EXIT|LESSTHAN|GREATERTHAN|LESSTHANEQ|GREATERTHANEQ|LABEL)\\b"
+				"match": "\\b(routine|end|goto|equal|notequal|exit|lessthan|greaterthan|lessthaneq|greaterthaneq|label|isvalidchar|notvalidchar|issome|isnone)\\b"
 				},
 				{
 				"name": "keyword.other.pipes",
@@ -56,10 +56,13 @@
 		"comments": {
 			"patterns": [
 				{
-				"name": "comment.line.pipes",
-				"begin": "#c",
-				"end": "\n"
-
+					"name": "comment.line.pipes",
+					"begin": "#c",
+					"end": "\n"
+				},
+				{
+					"name": "comment.line.pipes",
+					"match": "( to| by| in)"
 				}
 			]
 		},
@@ -67,7 +70,7 @@
 			"patterns": [
 				{
 				"name": "storage.other.pipes",
-				"match": "(&|\\$|@)"
+				"match": "(\\$|@|&|\\*|named\\:|valueof\\:|emulated\\:|cloned\\:|inner\\:)"
 				}
 				
 			]
@@ -76,7 +79,7 @@
 			"patterns": [
 				{
 					"name": "variable.parameter.pipes",
-					"match": "(?<=\\$)\\w++"
+					"match": "(?<=(named\\:|\\$|\\*|cloned\\:))\\w++"
 				}
 			]
 		},
